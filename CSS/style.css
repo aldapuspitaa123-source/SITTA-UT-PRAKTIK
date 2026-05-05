@@ -1,0 +1,804 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Roboto',sans-serif;
+}
+
+/* ========================= */
+/* BODY */
+/* ========================= */
+
+body{
+    background: linear-gradient(
+        135deg,
+        #eef5ff 0%,
+        #ffffff 55%,
+        #fff5e3 100%
+    );
+
+    min-height:100vh;
+
+    color:#1b1b1b;
+}
+
+/* ========================= */
+/* GLOBAL */
+/* ========================= */
+
+h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#1b3c74;
+    font-weight:700;
+}
+
+input{
+    width:100%;
+
+    padding:13px 15px;
+
+    margin:10px 0;
+
+    border:1px solid #d9d9d9;
+
+    border-radius:12px;
+
+    font-size:15px;
+
+    transition:0.3s;
+
+    background:#fff;
+}
+
+input:focus{
+
+    outline:none;
+
+    border-color:#1b6dc1;
+
+    box-shadow:
+        0 0 0 4px rgba(27,109,193,0.12);
+}
+
+button{
+    border:none;
+    cursor:pointer;
+}
+
+/* ========================= */
+/* LOGIN */
+/* ========================= */
+
+.login-container{
+
+    max-width:420px;
+
+    margin:7% auto;
+
+    background:rgba(255,255,255,0.97);
+
+    padding:38px;
+
+    border-radius:24px;
+
+    box-shadow:
+        0 12px 30px rgba(0,0,0,0.08);
+
+    backdrop-filter:blur(10px);
+}
+
+.login-container h2{
+
+    margin-bottom:28px;
+
+    color:#1b6dc1;
+}
+
+#loginForm button,
+.find-button{
+
+    width:100%;
+
+    padding:14px;
+
+    border-radius:12px;
+
+    background: linear-gradient(
+        90deg,
+        #ffb100,
+        #ffd24f
+    );
+
+    color:#29303B;
+
+    font-weight:700;
+
+    transition:0.3s;
+}
+
+#loginForm button:hover,
+.find-button:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:
+        0 8px 18px rgba(255,177,0,0.25);
+}
+
+#loginForm a{
+
+    text-align:right;
+
+    color:#1b6dc1;
+
+    text-decoration:none;
+
+    display:block;
+
+    font-size:12px;
+
+    margin-top:5px;
+
+    margin-bottom:20px;
+}
+
+.links{
+
+    margin-top:18px;
+
+    text-align:center;
+
+    font-size:13px;
+}
+
+.links a{
+
+    color:#1b6dc1;
+
+    text-decoration:none;
+}
+
+/* ========================= */
+/* DASHBOARD */
+/* ========================= */
+
+.menu{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:14px 32px;
+
+    background: linear-gradient(
+        90deg,
+        #1b6dc1,
+        #348df0
+    );
+
+    box-shadow:
+        0 4px 14px rgba(0,0,0,0.12);
+}
+
+.menu ul{
+
+    list-style:none;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+}
+
+.menu a{
+
+    color:#fff;
+
+    text-decoration:none;
+
+    font-weight:500;
+
+    transition:0.3s;
+
+    padding:10px 14px;
+
+    border-radius:8px;
+}
+
+.menu a:hover{
+
+    background:rgba(255,255,255,0.12);
+
+    color:#ffd24f;
+}
+
+#greeting{
+
+    text-align:center;
+
+    margin:45px auto;
+
+    color:#1b3c74;
+
+    font-size:34px;
+
+    font-weight:700;
+}
+
+/* ========================= */
+/* GREETING CARD */
+/* ========================= */
+
+.greeting-box {
+
+    width: 85%;
+    margin: 40px auto;
+
+    background: #ffffff;
+    padding: 30px 40px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.12);
+
+    text-align: center;
+}
+
+/* JUDUL */
+
+.greeting-box h1 {
+
+    font-size: 32px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+/* NAMA DI-HIGHLIGHT */
+
+.highlight {
+
+    color: #ff8c2f;
+    font-weight: 700;
+}
+
+/* SUBTEXT */
+
+.subtext {
+
+    font-size: 18px;
+    color: #555;
+}
+
+
+/* ========================= */
+/* DROPDOWN */
+/* ========================= */
+
+.dropdown{
+    position:relative;
+}
+
+.dropdown-content{
+
+    display:none;
+
+    position:absolute;
+
+    top:45px;
+
+    left:0;
+
+    background:#fff;
+
+    min-width:220px;
+
+    border-radius:14px;
+
+    overflow:hidden;
+
+    box-shadow:
+        0 10px 24px rgba(0,0,0,0.12);
+
+    z-index:99;
+}
+
+.dropdown-content a{
+
+    display:block;
+
+    color:#1b1b1b;
+
+    padding:14px 16px;
+}
+
+.dropdown-content a:hover{
+
+    background:#f4f8ff;
+
+    color:#1b6dc1;
+}
+
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+
+/* ========================= */
+/* TRACKING */
+/* ========================= */
+
+.tracking-container{
+
+    max-width:550px;
+
+    margin:35px auto;
+
+    background:#fff;
+
+    padding:30px;
+
+    border-radius:24px;
+
+    box-shadow:
+        0 12px 30px rgba(0,0,0,0.08);
+
+    text-align:center;
+}
+
+.tracking-card{
+
+    background:#fff;
+
+    border-radius:24px;
+
+    box-shadow:
+        0 12px 30px rgba(0,0,0,0.08);
+
+    padding:28px;
+
+    max-width:760px;
+
+    margin:30px auto;
+
+    animation:fadeIn 0.5s ease;
+}
+
+.tracking-card h3{
+
+    text-align:center;
+
+    color:#1b3c74;
+
+    margin-bottom:20px;
+}
+
+.tracking-info p{
+
+    margin:8px 0;
+
+    font-size:15px;
+}
+
+.status{
+
+    color:#1b6dc1;
+
+    font-weight:700;
+}
+
+/* ========================= */
+/* TIMELINE */
+/* ========================= */
+
+.timeline{
+
+    list-style:none;
+
+    position:relative;
+
+    margin-top:25px;
+
+    padding-left:32px;
+}
+
+.timeline::before{
+
+    content:'';
+
+    position:absolute;
+
+    left:14px;
+
+    top:0;
+
+    width:3px;
+
+    height:100%;
+
+    background: linear-gradient(
+        #1b6dc1,
+        #5da8ff
+    );
+
+    border-radius:20px;
+}
+
+.timeline li{
+
+    position:relative;
+
+    margin-bottom:22px;
+}
+
+.timeline-dot{
+
+    position:absolute;
+
+    left:-22px;
+
+    top:5px;
+
+    width:14px;
+
+    height:14px;
+
+    background:#ffb100;
+
+    border-radius:50%;
+
+    box-shadow:
+        0 0 0 4px rgba(255,177,0,0.15);
+}
+
+.timeline-time{
+
+    display:block;
+
+    color:#1b6dc1;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    margin-bottom:5px;
+}
+
+.timeline-text{
+
+    background:#f4f8ff;
+
+    padding:12px 14px;
+
+    border-radius:12px;
+
+    box-shadow:
+        0 3px 8px rgba(0,0,0,0.05);
+}
+
+/* ========================= */
+/* ANIMATION */
+/* ========================= */
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:translateY(10px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* ========================= */
+/* STOCK */
+/* ========================= */
+
+.container {
+
+    width: 90%;
+
+    margin: 40px auto;
+
+    padding-bottom: 50px;
+}
+
+
+/* ========================= */
+/* JUDUL */
+/* ========================= */
+
+.container h2 {
+
+    margin-bottom: 22px;
+
+    font-size: 32px;
+
+    color: #1b3c74;
+}
+
+
+/* ========================= */
+/* FORM TAMBAH STOK */
+/* ========================= */
+
+form#formTambah {
+
+    
+    max-width: 1000px;
+    margin: 0 auto 50px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+
+
+/* INPUT */
+
+form#formTambah input {
+
+    width: 100%;
+
+    padding: 15px 18px;
+
+    border: 1px solid #d9d9d9;
+
+    border-radius: 14px;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+
+    background: #fafafa;
+
+    box-sizing: border-box;
+}
+
+form#formTambah input:focus {
+
+    outline: none;
+
+    border-color: #1b6dc1;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 0 0 4px rgba(27, 109, 193, 0.12);
+}
+
+
+/* FILE INPUT */
+
+form#formTambah input[type="file"] {
+
+    padding: 12px;
+
+    background: #ffffff;
+
+    cursor: pointer;
+}
+
+
+/* BUTTON */
+
+form#formTambah button {
+
+    width: 100%;
+
+    margin-top: 10px;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 14px;
+
+    background: linear-gradient(
+        90deg,
+        #c1a81b,
+        #f0c734
+    );
+
+    color: #ffffff;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+form#formTambah button:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 22px rgba(52, 141, 240, 0.25);
+}
+
+
+/* ========================= */
+/* TABLE */
+/* ========================= */
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background: #ffffff;
+
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+
+/* TABLE HEADER */
+
+table th {
+
+    background: linear-gradient(
+        90deg,
+        #1b6dc1,
+        #348df0
+    );
+
+    color: #ffffff;
+
+    font-size: 15px;
+
+    letter-spacing: 0.3px;
+}
+
+
+/* TABLE CELL */
+
+table th,
+table td {
+
+    padding: 16px;
+
+    text-align: center;
+
+    border-bottom: 1px solid #f1f1f1;
+}
+
+
+/* TABLE ROW */
+
+table tr {
+
+    transition: 0.25s;
+}
+
+table tbody tr:hover {
+
+    background: #f7fbff;
+}
+
+
+/* ========================= */
+/* COVER IMAGE */
+/* ========================= */
+
+.cover-img {
+
+    width: 75px;
+
+    height: 105px;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    box-shadow:
+        0 6px 16px rgba(0, 0, 0, 0.16);
+}
+
+.cover-img:hover {
+
+    transform: scale(1.08);
+
+    box-shadow:
+        0 10px 22px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+    .menu {
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .menu ul {
+
+        flex-direction: column;
+
+        width: 100%;
+
+        text-align: center;
+    }
+
+    #greeting {
+
+        font-size: 26px;
+
+        padding: 0 15px;
+    }
+
+    .container {
+
+        width: 95%;
+    }
+
+    .container h2 {
+
+        font-size: 25px;
+    }
+
+    table th,
+    table td {
+
+        padding: 12px;
+
+        font-size: 13px;
+    }
+
+    .cover-img {
+
+        width: 55px;
+
+        height: 80px;
+    }
+
+    form#formTambah {
+
+        padding: 22px;
+    }
+
+    form#formTambah input {
+
+        font-size: 14px;
+    }
+
+    .tracking-container,
+    .tracking-card,
+    .login-container {
+
+        width: 95%;
+    }
+}
+
+
